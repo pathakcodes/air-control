@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050507">
+  <meta name="description" content="Control your Mac with a little air. Move, click, scroll and switch desktops using hand gestures and your camera. Free Apple silicon beta.">
+  <meta property="og:title" content="Air Control — Your Mac. At your fingertips.">
+  <meta property="og:description" content="Point. Pinch. Swipe. A new way to move through your Mac, using the camera you already have. Free beta for Apple silicon.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pathakcodes.github.io/air-control/">
+  <meta property="og:image" content="https://pathakcodes.github.io/air-control/assets/control-room.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://pathakcodes.github.io/air-control/">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Air Control — Your Mac. At your fingertips.</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="Air Control home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 11a9 9 0 0 1 0 10M14 7a16 16 0 0 1 0 18M20 3a23 23 0 0 1 0 26"/></svg>Air Control</a>
+      <div class="nav-links"><a href="#experience">Explore</a><a href="#gestures">Gestures</a><a href="#install">Install</a><a href="https://github.com/pathakcodes/air-control" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div>
+      <a class="button small download" href="https://github.com/pathakcodes/air-control/releases/latest/download/Air-Control-0.6.0-arm64.dmg">Download <span class="nav-download-extra">for Mac</span> <span aria-hidden="true">↓</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-copy wrap">
+        <p class="eyebrow"><span class="status-dot"></span> A little air. A whole new way.</p>
+        <h1 id="hero-title">Your Mac.<br><span class="silver">At your fingertips.</span></h1>
+        <p class="hero-description">Point. Pinch. Swipe.<br>Move through your Mac without touching a thing.</p>
+        <div class="hero-actions"><a class="button download" href="https://github.com/pathakcodes/air-control/releases/latest/download/Air-Control-0.6.0-arm64.dmg">Download free beta <span aria-hidden="true">↓</span></a><a class="text-link" href="#experience">Take a closer look <span aria-hidden="true">↗</span></a></div>
+        <p class="compatibility">v0.6.0 · Apple silicon · macOS 13 or later</p>
+      </div>
+      <div class="hero-product wrap">
+        <div class="product-halo" aria-hidden="true"></div>
+        <img class="hero-screenshot" src="assets/control-room.png" width="2400" height="1700" alt="Air Control's actual Control room with its 3D hand guide and camera session controls" fetchpriority="high">
+        <div class="product-caption"><span><span class="status-dot"></span> Actual app. A little more possibility.</span><span>Camera off in screenshots.</span></div>
+      </div>
+    </section>
+
+    <section class="intro wrap section-space" aria-labelledby="intro-title">
+      <p class="eyebrow">Meet Air Control</p>
+      <h2 id="intro-title">Less reaching.<br><span class="muted">More doing.</span></h2>
+      <div class="intro-copy"><p>Your camera becomes a new way in. Air Control tracks your hands and turns familiar movements into mouse and keyboard actions.</p><p>Move the pointer with a finger. Pinch to click. Sweep your hand to the next desktop. It’s a small change in how you move. And a fresh way to use your Mac.</p></div>
+      <div class="facts"><div><strong>22</strong><span>gestures to explore</span></div><div><strong>On-device</strong><span>hand tracking with Apple Vision</span></div><div><strong>Your camera.</strong><span>no extra hardware to buy</span></div></div>
+    </section>
+
+    <section class="motion-section section-space" aria-labelledby="motion-title">
+      <div class="wrap"><div class="section-heading"><p class="eyebrow">Make your move</p><h2 id="motion-title">Feels familiar.<br><span class="muted">Works in the air.</span></h2></div>
+        <div class="motion-layout">
+          <div class="motion-stage" data-demo="point" aria-label="Illustrated gesture preview">
+            <div class="demo-orbits" aria-hidden="true"></div><span class="stage-label">GESTURE PREVIEW · ILLUSTRATION</span>
+            <div class="desktop-preview" aria-hidden="true"><div class="desktop-window window-one"><i></i><i></i><i></i><div></div><div></div></div><div class="desktop-window window-two"><i></i><i></i><i></i><div></div><div></div></div></div>
+            <svg class="demo-hand" viewBox="0 0 240 300" fill="none" aria-hidden="true"><defs><linearGradient id="hand-light" x1="40" y1="40" x2="210" y2="280" gradientUnits="userSpaceOnUse"><stop stop-color="#f8fcff"/><stop offset=".45" stop-color="#b8c9da"/><stop offset="1" stop-color="#586777"/></linearGradient></defs><g class="hand-palm hand-point"><path d="M78 173V53Q78 39 90 39Q102 39 102 53V142Q102 130 114 130Q126 130 126 142V155Q126 143 138 143Q150 143 150 155V166Q150 154 162 154Q174 154 174 166V199Q174 235 151 260V279H92V257Q73 241 58 217L32 180Q25 168 36 161Q46 155 55 166L78 190Z" fill="url(#hand-light)" stroke="#c8e4fa" stroke-width="1.5"/><path d="M103 149V182M126 158V188M150 169V195M91 213Q116 194 141 209M95 258H148" stroke="#586e83" stroke-width="1.5" opacity=".55"/></g><g class="hand-palm hand-click"><path d="M74 180Q58 159 69 141L95 106Q105 92 121 100L146 114Q160 121 153 135Q147 147 133 139L116 130L106 147L111 166Q117 153 130 157L143 171Q151 163 161 174L175 192V213Q173 239 154 259V279H96V257Q70 233 56 211L38 183Q30 170 41 164Q51 158 61 171L81 194Z" fill="url(#hand-light)" stroke="#c8e4fa" stroke-width="1.5"/><path d="M111 168L126 188M143 174L153 192M97 211Q121 198 144 214M98 258H152" stroke="#586e83" stroke-width="1.5" opacity=".55"/></g><g class="hand-palm hand-swipe"><path d="M73 178V117Q73 105 84 105Q96 105 96 117V61Q96 49 107 49Q119 49 119 61V143V35Q119 22 131 22Q143 22 143 35V143V58Q143 46 155 46Q167 46 167 58V150V94Q167 82 178 82Q190 82 190 94V201Q190 236 166 260V279H98V256Q78 240 62 217L36 178Q29 166 40 158Q49 153 58 164L73 178Z" fill="url(#hand-light)" stroke="#c8e4fa" stroke-width="1.5"/><path d="M98 201Q124 181 155 194M96 143V181M119 143V174M143 143V174M167 150V180M101 258H164" stroke="#586e83" stroke-width="1.5" opacity=".55"/></g><circle class="pinch-ring" cx="99" cy="147" r="25" stroke="#94d2ff" stroke-width="3"/><path class="swipe-arrow" d="M20 130H220M205 116L220 130L205 144M35 116L20 130L35 144" stroke="#a8daff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div class="demo-pointer" aria-hidden="true">↖</div><span class="demo-result" aria-live="polite">Move your hand. Move your pointer.</span>
+          </div>
+          <div class="motion-controls" role="group" aria-label="Preview an everyday gesture">
+            <button class="motion-choice active" data-demo="point" aria-pressed="true"><span class="choice-index">01</span><span><strong>Point to move.</strong><small>Index finger up. Middle finger folded. Move your hand and the pointer follows.</small></span><span class="choice-arrow" aria-hidden="true">↗</span></button>
+            <button class="motion-choice" data-demo="click" aria-pressed="false"><span class="choice-index">02</span><span><strong>A pinch. A click.</strong><small>Touch thumb to index, then release to click. Hold a little longer to drag.</small></span><span class="choice-arrow" aria-hidden="true">↗</span></button>
+            <button class="motion-choice" data-demo="swipe" aria-pressed="false"><span class="choice-index">03</span><span><strong>Change your Space.</strong><small>Bring up an open hand. Sweep left for the next desktop. Right to go back.</small></span><span class="choice-arrow" aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience wrap section-space" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><p class="eyebrow">A closer look</p><h2 id="experience-title">Designed to get<br><span class="silver">out of your way.</span></h2><p>Four simple places to start, learn, explore and make it yours.</p></div>
+      <div class="screen-tabs" role="tablist" aria-label="App screenshots">
+        <button id="tab-control-room" role="tab" aria-selected="true" aria-controls="screen-panel" data-screen="control-room" tabindex="0">Control room</button><button id="tab-practice" role="tab" aria-selected="false" aria-controls="screen-panel" data-screen="practice" tabindex="-1">Practice</button><button id="tab-gesture-library" role="tab" aria-selected="false" aria-controls="screen-panel" data-screen="gesture-library" tabindex="-1">Gesture library</button><button id="tab-settings" role="tab" aria-selected="false" aria-controls="screen-panel" data-screen="settings" tabindex="-1">Settings</button>
+      </div>
+      <div class="screen-panel" id="screen-panel" role="tabpanel" aria-labelledby="tab-control-room"><img id="product-screen" src="assets/control-room.png" width="2400" height="1700" alt="Control room: start the camera, open practice and enable Mac control" loading="lazy"><div class="screen-description" aria-live="polite"><span id="screen-number">01 / 04</span><div><h3 id="screen-title">Your session. At a glance.</h3><p id="screen-copy">Start your camera, check tracking and take control when you’re ready. Live Mac control always starts with you.</p></div></div></div>
+      <div class="experience-notes"><div><span aria-hidden="true">◉</span><h3>A guide that comes along.</h3><p>The floating camera feed stays across apps and desktops, with a 3D gesture guide and action feedback. Move it or hide it anytime.</p></div><div><span aria-hidden="true">◇</span><h3>Practice before you take control.</h3><p>Follow animated 3D lessons in a playground. Try each action on a chosen Mac app with a countdown when you’re ready.</p></div></div>
+    </section>
+
+    <section class="gestures section-space" id="gestures" aria-labelledby="gestures-title"><div class="wrap">
+      <div class="section-heading"><p class="eyebrow">The gesture collection</p><h2 id="gestures-title">A little movement.<br><span class="muted">A lot you can do.</span></h2><p>Explore all 22 gestures. Every one has an animated lesson in the app.</p></div>
+      <div class="gesture-filters" role="group" aria-label="Filter gestures"><button class="active" data-filter="all" aria-pressed="true">All <span>22</span></button><button data-filter="everyday" aria-pressed="false">Everyday</button><button data-filter="navigate" aria-pressed="false">Navigate</button><button data-filter="more" aria-pressed="false">Go further</button></div>
+      <div class="gesture-grid" id="gesture-grid"></div><noscript><p>Air Control includes pointing, clicks, dragging, scrolling, browser history, desktop and app switching, Mission Control, App Exposé, Show Desktop, Open Apps, Look Up, zoom, rotation, notifications and pause. Enable JavaScript to explore each gesture here.</p></noscript>
+      <p class="gesture-footnote">Desktop gestures use your Mac’s default keyboard shortcuts and need more than one Space. Zoom works in supported browsers and Preview. Rotation uses 90° steps in Preview. <a href="#faq">See compatibility details <span aria-hidden="true">↗</span></a></p>
+    </div></section>
+
+    <section class="privacy wrap section-space" aria-labelledby="privacy-title"><div class="privacy-symbol" aria-hidden="true"><svg viewBox="0 0 80 90"><path d="M40 5L68 16V42C68 62 52 77 40 84C28 77 12 62 12 42V16L40 5Z"/><rect x="28" y="37" width="24" height="21" rx="5"/><path d="M32 37V30a8 8 0 0 1 16 0V37"/></svg></div><p class="eyebrow">Personal by design</p><h2 id="privacy-title">Your hands.<br>Your camera.<br><span class="muted">Your Mac.</span></h2><p>Hand tracking runs locally with Apple Vision. Air Control doesn’t upload or record your camera feed. No account. No cloud processing. Your camera stays off until you start it.</p><div class="pause-note">Need a moment? Hold a fist to pause.<br><span>Or press <kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>Space</kbd>. Resume when you’re ready.</span></div></section>
+
+    <section class="install section-space" id="install" aria-labelledby="install-title"><div class="wrap">
+      <div class="section-heading"><p class="eyebrow">From download to first gesture</p><h2 id="install-title">Up and moving.<br><span class="muted">In a few steps.</span></h2><p>Have an Apple silicon Mac, macOS 13 or later, and a working camera? You’re ready to begin.</p></div>
+      <ol class="install-steps">
+        <li><span class="step-number">01</span><div><h3>Download. Drag. Done.</h3><p><a class="download" href="https://github.com/pathakcodes/air-control/releases/latest/download/Air-Control-0.6.0-arm64.dmg">Download the DMG</a>, open it, and drag Air Control into Applications. Eject the disk image, then launch Air Control from Applications.</p></div><span class="step-art" aria-hidden="true">↓</span></li>
+        <li><span class="step-number">02</span><div><h3>Open the free beta.</h3><p>This beta is ad-hoc signed, without Apple notarization. If macOS blocks it, and you trust this download, first try opening it, then go to <strong>System Settings → Privacy &amp; Security → Open Anyway</strong> and approve Open. <a href="https://support.apple.com/en-us/102445" target="_blank" rel="noopener">Read Apple’s guidance ↗</a></p></div><span class="step-art" aria-hidden="true">↗</span></li>
+        <li><span class="step-number">03</span><div><h3>Let your camera see your hand.</h3><p>Click <strong>Start camera</strong> and allow Camera access. In the app’s Settings, choose your built-in, USB or available Continuity Camera. Keep your full hand in frame with light in front of you.</p></div><span class="step-art" aria-hidden="true">◉</span></li>
+        <li><span class="step-number">04</span><div><h3>Learn it. Then enable it.</h3><p>Explore <strong>Practice</strong> first. To control macOS, click <strong>Enable Mac control</strong> and allow Air Control in <strong>Privacy &amp; Security → Accessibility</strong>. Return to the app and enable control again.</p></div><span class="step-art" aria-hidden="true">✦</span></li>
+        <li><span class="step-number">05</span><div><h3>Give your gestures room.</h3><p>For desktop switching, create at least two desktops in Mission Control. In <strong>Keyboard → Keyboard Shortcuts → Mission Control</strong>, enable the default Control–Arrow shortcuts and F11 for Show Desktop. Air Control uses these shortcuts; it doesn’t change them.</p></div><span class="step-art" aria-hidden="true">⇄</span></li>
+      </ol>
+      <aside class="install-note"><strong>Keeping things simple.</strong><p>Keep the app in Applications after installing. Each Mac needs its own Camera and Accessibility approval. After an update, you may need to refresh Air Control’s existing Accessibility entry. Intel support will follow testing.</p></aside>
+    </div></section>
+
+    <section class="faq wrap section-space" id="faq" aria-labelledby="faq-title"><p class="eyebrow">Good to know</p><h2 id="faq-title">A few more things.</h2><div class="faq-list">
+      <details><summary>Which Macs does it work on?<span aria-hidden="true">+</span></summary><p>The current beta is built only for Apple silicon Macs (M1 and later) running macOS 13 or later, with a working camera. Native Liquid Glass is used on macOS 26 and later; earlier supported systems use frosted materials. Intel builds are planned after testing.</p></details>
+      <details><summary>Does it work in every app?<span aria-hidden="true">+</span></summary><p>Pointing, clicking, dragging and scrolling send standard mouse events. Navigation uses familiar keyboard shortcuts, so the target app and your shortcut settings determine support. Zoom uses Command +/− and reset uses Command–0 in Safari, Chrome, Edge, Firefox and Preview. Rotation is limited to 90° steps in Preview. Air Control doesn’t add touchscreen hardware, pressure sensing or arbitrary app-specific touch gestures.</p></details>
+      <details><summary>Is it free? Why does macOS show a warning?<span aria-hidden="true">+</span></summary><p>This beta download is free. It has a local ad-hoc signature, without a paid Developer ID certificate or Apple notarization, so macOS may ask for an explicit Open Anyway approval. Follow the installation steps above and Apple’s linked guidance only if you trust the source. Managed Macs may prevent an exception.</p></details>
+      <details><summary>How do I pause or hide the camera feed?<span aria-hidden="true">+</span></summary><p>Hold a closed fist for one second, use Pause in the menu bar, or press Control + Option + Command + Space. Use the floating panel’s × to hide the feed; hand tracking continues. Show it again from Settings or the menu bar. Live control does not resume automatically after relaunch.</p></details>
+      <details><summary>A gesture isn’t working. Where do I start?<span aria-hidden="true">+</span></summary><p>Make sure your whole hand is visible and well lit, then use Practice to check recognition. Gesture library → Try on Mac tests the action separately from camera tracking. Check Accessibility access, enabled gestures and system shortcuts. Browser back/forward needs history, and desktop switching needs another Space. <a href="https://github.com/pathakcodes/air-control/issues" target="_blank" rel="noopener">Report an issue on GitHub ↗</a></p></details>
+    </div></section>
+
+    <section class="download-section section-space" id="download" aria-labelledby="download-title"><div class="wrap"><img src="assets/icon.png" width="88" height="88" alt="Air Control app icon" loading="lazy"><p class="eyebrow">Ready when you are</p><h2 id="download-title">Put a little air<br><span class="silver">into your Mac.</span></h2><a class="button download" href="https://github.com/pathakcodes/air-control/releases/latest/download/Air-Control-0.6.0-arm64.dmg">Download Air Control <span aria-hidden="true">↓</span></a><p class="compatibility">Free beta v0.6.0 · Apple silicon · macOS 13+</p><a class="checksum-link" href="https://github.com/pathakcodes/air-control/releases/tag/v0.6.0">Release notes &amp; SHA-256 checksum ↗</a><div class="star-callout"><div><h3>Like where this is going?</h3><p>A star helps more people discover Air Control.</p></div><a class="star-button" href="https://github.com/pathakcodes/air-control" target="_blank" rel="noopener"><span aria-hidden="true">☆</span> Star on GitHub <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="wrap"><a class="brand" href="#">Air Control</a><p>Made for a little more freedom.</p><div><a href="https://github.com/pathakcodes/air-control" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/pathakcodes/air-control/issues" target="_blank" rel="noopener">Feedback ↗</a><a href="#install">Install guide</a></div><small>An independent project. Not affiliated with or endorsed by Apple. Mac and macOS are trademarks of Apple Inc.</small></footer>
+</body>
+</html>
