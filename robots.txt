@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /air-control/
+
+Sitemap: https://pathakcodes.github.io/air-control/sitemap.xml
