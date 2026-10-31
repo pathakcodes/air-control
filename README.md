@@ -8,13 +8,13 @@
   <h3>Your Mac. At your fingertips.</h3>
   <p>Hand gesture control for Mac. Point, pinch, scroll and switch desktops<br>using your camera — with on-device hand tracking.</p>
   <p>
-    <a href="https://github.com/pathakcodes/air-control/releases/tag/v0.6.0"><img src="https://img.shields.io/badge/version-0.6.0-9dd3ff?style=flat-square" alt="Version 0.6.0"></a>
+    <a href="https://github.com/pathakcodes/air-control/releases/tag/v0.6.1"><img src="https://img.shields.io/badge/version-0.6.1-9dd3ff?style=flat-square" alt="Version 0.6.1"></a>
     <img src="https://img.shields.io/badge/macOS-13%2B-333940?style=flat-square&logo=apple&logoColor=white" alt="macOS 13 or later">
     <img src="https://img.shields.io/badge/Apple_silicon-arm64-333940?style=flat-square" alt="Apple silicon arm64 only">
     <img src="https://img.shields.io/badge/Free-beta-333940?style=flat-square" alt="Free beta">
     <a href="https://github.com/pathakcodes/air-control/stargazers"><img src="https://img.shields.io/github/stars/pathakcodes/air-control?style=flat-square&color=9dd3ff" alt="GitHub stars"></a>
   </p>
-  <p><a href="https://github.com/pathakcodes/air-control/releases/download/v0.6.0/Air-Control-0.6.0-arm64.dmg"><img src="https://img.shields.io/badge/Download_for_Mac-Free_beta-e7f2ff?style=for-the-badge" alt="Download Air Control DMG for Mac"></a></p>
+  <p><a href="https://github.com/pathakcodes/air-control/releases/download/v0.6.1/Air-Control-0.6.1-arm64.dmg"><img src="https://img.shields.io/badge/Download_for_Mac-Free_beta-e7f2ff?style=for-the-badge" alt="Download Air Control DMG for Mac"></a></p>
   <p><a href="https://pathakcodes.github.io/air-control/"><b>Explore the website ↗</b></a> &nbsp; · &nbsp; <a href="https://pathakcodes.github.io/air-control/#install">Install guide</a> &nbsp; · &nbsp; <a href="https://github.com/pathakcodes/air-control/releases">Releases</a> &nbsp; · &nbsp; <a href="https://github.com/pathakcodes/air-control/issues">Feedback</a></p>
   <br>
   <a href="https://pathakcodes.github.io/air-control/#experience"><img src="assets/control-room.png" width="1080" alt="Air Control 0.6.0 Control room — glass interface, 3D hand guide and camera session controls"></a>
@@ -59,15 +59,23 @@
 
 **Requirements:** Apple silicon Mac (M1 or later), **macOS 13+**, and a working camera. This beta is **arm64 only**. Intel support will follow testing.
 
-1. **Download and install.** Get the [0.6.0 DMG](https://github.com/pathakcodes/air-control/releases/download/v0.6.0/Air-Control-0.6.0-arm64.dmg), open it and drag **Air Control** to **Applications**. Copy the **Air Control.app** icon inside the DMG, not the DMG file itself. Eject the image and launch the app from Applications.
+1. **Download and install.** Get the [0.6.1 DMG](https://github.com/pathakcodes/air-control/releases/download/v0.6.1/Air-Control-0.6.1-arm64.dmg), open it and drag **Air Control** to **Applications**. Copy the **Air Control.app** icon inside the DMG, not the DMG file itself. Eject the image and launch the app from Applications.
 2. **Approve the first launch.** If “Air Control” Not Opened appears, choose **Done**, then **System Settings → Privacy & Security → Open Anyway**. In the next “Open Air Control?” dialog, choose **Open Anyway** again (or **Open**, depending on macOS). See the [screenshot walkthrough below](#first-launch-security-warning).
 3. **Allow Camera access.** Click **Start camera** and approve Camera access. Keep your full hand in view with light in front of you.
 4. **Learn, then take control.** Open **Practice** first. Click **Enable Mac control**, allow Air Control in **Privacy & Security → Accessibility**, return to the app and enable control again.
 5. **Set up desktop navigation.** Create at least two desktops in Mission Control. Enable default **Control–Arrow** shortcuts and **F11** under **Keyboard → Keyboard Shortcuts → Mission Control**.
 
-> **✊ Pause anytime:** hold a closed fist for one second, use Pause in the menu bar, or press **Control + Option + Command + Space**. Mac control never starts automatically after relaunch.
+> **✊ Pause anytime:** use Pause in the menu bar or press **Control + Option + Command + Space**. Mac control never starts automatically after relaunch. Fist pause is off by default; enable it in Settings or Gesture library if desired.
 
-Keep the installed app in Applications. Each Mac needs its own permission approval. After an update, macOS may require refreshing Air Control’s existing Accessibility entry. [Release notes and SHA-256 checksum ↗](https://github.com/pathakcodes/air-control/releases/tag/v0.6.0)
+Keep the installed app in Applications. Each Mac needs its own permission approval. After an update, macOS may require refreshing Air Control’s existing Accessibility entry. [Release notes and SHA-256 checksum ↗](https://github.com/pathakcodes/air-control/releases/tag/v0.6.1)
+
+## Gesture controls in 0.6.1
+
+Use **Gesture library** to enable or disable each gesture, including **Pause control**, with its switch. Each card shows **Enabled** or **Disabled**. Changing a switch pauses Mac control and releases any drag; enable Mac control again when you are ready.
+
+**Fist stop/pause is disabled by default**, including when upgrading from an earlier build. Settings also provides **Enable fist pause gesture** and **Manage gestures**. Your choices persist across launches. **Control + Option + Command + Space** and menu Pause remain available regardless of the fist setting.
+
+<img src="assets/gesture-controls.png" width="1080" alt="Air Control 0.6.1 Gesture library showing Pause control Disabled with an editable off switch">
 
 ## First launch security warning
 
