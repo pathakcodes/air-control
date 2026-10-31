@@ -59,8 +59,8 @@
 
 **Requirements:** Apple silicon Mac (M1 or later), **macOS 13+**, and a working camera. This beta is **arm64 only**. Intel support will follow testing.
 
-1. **Download and install.** Get the [0.6.0 DMG](https://github.com/pathakcodes/air-control/releases/download/v0.6.0/Air-Control-0.6.0-arm64.dmg), open it and drag **Air Control** to **Applications**. Eject the image and launch the app from Applications.
-2. **Open the free beta.** This build is ad-hoc signed, without Developer ID signing or Apple notarization. If blocked, and you trust the download, try opening it, then go to **System Settings → Privacy & Security → Open Anyway**. Follow [Apple’s official guidance](https://support.apple.com/en-us/102445). Managed Macs may prevent this exception.
+1. **Download and install.** Get the [0.6.0 DMG](https://github.com/pathakcodes/air-control/releases/download/v0.6.0/Air-Control-0.6.0-arm64.dmg), open it and drag **Air Control** to **Applications**. Copy the **Air Control.app** icon inside the DMG, not the DMG file itself. Eject the image and launch the app from Applications.
+2. **Approve the first launch.** If “Air Control” Not Opened appears, choose **Done**, then **System Settings → Privacy & Security → Open Anyway**. In the next “Open Air Control?” dialog, choose **Open Anyway** again (or **Open**, depending on macOS). See the [screenshot walkthrough below](#first-launch-security-warning).
 3. **Allow Camera access.** Click **Start camera** and approve Camera access. Keep your full hand in view with light in front of you.
 4. **Learn, then take control.** Open **Practice** first. Click **Enable Mac control**, allow Air Control in **Privacy & Security → Accessibility**, return to the app and enable control again.
 5. **Set up desktop navigation.** Create at least two desktops in Mission Control. Enable default **Control–Arrow** shortcuts and **F11** under **Keyboard → Keyboard Shortcuts → Mission Control**.
@@ -68,6 +68,42 @@
 > **✊ Pause anytime:** hold a closed fist for one second, use Pause in the menu bar, or press **Control + Option + Command + Space**. Mac control never starts automatically after relaunch.
 
 Keep the installed app in Applications. Each Mac needs its own permission approval. After an update, macOS may require refreshing Air Control’s existing Accessibility entry. [Release notes and SHA-256 checksum ↗](https://github.com/pathakcodes/air-control/releases/tag/v0.6.0)
+
+## First launch security warning
+
+**Tested on 31 October 2026:** Air Control 0.6.0 downloaded and copied into Applications on **macOS 26.6.2**. The app opened after the approval below, and a quit/relaunch opened normally without another security warning.
+
+This free beta is **ad-hoc signed, without a Developer ID certificate or Apple notarization**. macOS therefore cannot verify it through Apple's distribution checks. Only approve it if you trust the download from this repository. These screenshots show the actual macOS prompts from that test.
+
+### 1. Keep the app and choose Done
+
+Open **Applications → Air Control**. If you see **“Air Control” Not Opened** with “Apple could not verify…”, click **Done**. Choosing **Move to Bin** removes the app instead.
+
+<img src="assets/install/air-control-not-opened.png" width="420" alt="Actual macOS warning: Air Control Not Opened, with Done and Move to Bin buttons">
+
+### 2. Allow this app in Privacy & Security
+
+Open **System Settings → Privacy & Security** and scroll down to **Security**. Find **“Air Control” was blocked to protect your Mac.** and click the **Open Anyway** button next to it.
+
+If that entry is missing, try opening Air Control from Applications once more, dismiss its warning with Done, then return to Privacy & Security. On an organization-managed Mac, your administrator may prevent this exception.
+
+### 3. Confirm Open Anyway in the second dialog
+
+macOS shows **Open “Air Control”?**. On the tested macOS version, the button is **Open Anyway** again — it is not labelled simply Open. Other macOS versions may say **Open**. Approve Touch ID or your Mac login password yourself if macOS requests authentication.
+
+<img src="assets/install/confirm-open-anyway.png" width="420" alt="Actual second macOS dialog: Open Air Control, with Open Anyway, Done and Move to Bin buttons">
+
+### 4. Start the camera, then enable control
+
+Air Control opens in the **Control room**. Click **Start camera** and allow Camera access. Use **Practice** first, then **Enable Mac control** and allow Air Control under **Privacy & Security → Accessibility**. Return to Air Control and enable control again. An existing permission may already be valid on an updated installation.
+
+<details>
+<summary><b>Screenshot: the installed app after successful approval</b></summary>
+<br>
+<img src="assets/install/air-control-opened.png" width="1080" alt="Air Control successfully opened from Applications after the macOS approval; camera is off and Start camera is available">
+</details>
+
+The exception applies to this app; the test left the system's general app-security setting unchanged. You do not need to disable Gatekeeper or run a command to remove quarantine. For alerts saying the app **will damage your computer** or **is damaged**, stop and check the download or [report the exact warning](https://github.com/pathakcodes/air-control/issues) instead of following this approval walkthrough. See [Apple's official app-opening guidance](https://support.apple.com/en-us/102445).
 
 ## 🔒 On your Mac. Under your control.
 
