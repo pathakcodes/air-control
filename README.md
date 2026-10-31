@@ -83,7 +83,22 @@ Open **Applications → Air Control**. If you see **“Air Control” Not Opened
 
 ### 2. Allow this app in Privacy & Security
 
-Open **System Settings → Privacy & Security** and scroll down to **Security**. Find **“Air Control” was blocked to protect your Mac.** and click the **Open Anyway** button next to it.
+Open **System Settings → Privacy & Security** and **scroll down to the Security section**, below the app-permission categories. After the blocked launch, look for this message underneath **Allow applications from**:
+
+> **“Air Control” was blocked to protect your Mac.**
+>
+> Click **Open Anyway** beside this message.
+
+<img src="assets/install/privacy-security-open-anyway.png" width="900" alt="Privacy & Security showing the Security section and the message Air Control was blocked to protect your Mac, with Open Anyway beside it">
+
+*Before approval: the Air Control message and Open Anyway button appear under Security.*
+
+<details>
+<summary><b>Where to find Security — screenshot after approval</b></summary>
+<br>
+<img src="assets/install/privacy-security-after-approval.png" width="900" alt="Privacy & Security scrolled to the Security section after approval, with the Air Control blocked message no longer present">
+<p>This screenshot shows where the Security section is. The Air Control message disappears after successful approval, so it is no longer visible here.</p>
+</details>
 
 If that entry is missing, try opening Air Control from Applications once more, dismiss its warning with Done, then return to Privacy & Security. On an organization-managed Mac, your administrator may prevent this exception.
 
